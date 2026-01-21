@@ -8,13 +8,15 @@
 ## 1. System Information
 
 **Laptop model:**  
-_[Your laptop model, e.g., Dell XPS 15, MacBook Pro M1, etc.]_
+My laptop is acer swift3 with i5-1135G7@4core and 16g ram and 7.72g avaliable storage, hence it is impossible for using Docker and Container in the device (I have used it before in my PC so am able to estimate the possibility and draw the conclusion). So I have to use a rented cloud service for the task, and finally select AutoDL (https://www.autodl.com/) with a instance (actually a docker container based on ubuntu22.04 and could install packages) that may fit the following tasks request with pytorch-gpu etc..
+
+<img width="2243" height="1286" alt="image" src="https://github.com/user-attachments/assets/2c82d401-b647-4cc5-8cda-d9d25ed31de3" />
 
 **CPU / RAM:**  
-_[e.g., Intel Core i7-11800H, 16GB RAM]_
+16 vCPU Intel(R) Xeon(R) Platinum 8352V CPU @ 2.10GHz / 120GB RAM
 
 **Host OS:**  
-_[Windows 11 / macOS / Ubuntu 22.04]_
+Ubuntu 22.04
 
 **Linux/ROS environment type:**  
 _[Choose one:]_
@@ -23,7 +25,7 @@ _[Choose one:]_
 - [ ] Ubuntu in VM (UTM/VirtualBox/VMware/Parallels)
 - [ ] Docker container
 - [ ] Lab PC
-- [ ] Remote Linux server
+- [x] Remote Linux server
 
 ---
 
@@ -44,7 +46,9 @@ pip install -r requirements.txt
 ```
 
 **Any deviations from the default instructions:**  
-_[Describe any changes you made, or write "None"]_
+I used conda before with routhly steps of: 1)download anaconda or miniconda; 2)use conda prompt for the command 'conda creat -n python=xx.xx'; 3)'activate -n' the venv and install packages; 4)find the interpreter in ide and use the venv (need to add environment variable in win10, and may need a CUDA or cudatookit package)
+
+But it is easy and enjoy for complete these complex steps by rent a cloud service, just recharge the AutoDL platform, select a instance and start, use remote ssh to connect the instant (container) in IDE (https://www.bilibili.com/video/BV1BtpEzxENN).
 
 ### 2.2 Test Results
 
